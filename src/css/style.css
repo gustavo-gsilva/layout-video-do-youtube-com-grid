@@ -1,0 +1,125 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', 'sans-serif' ;
+}
+
+.container {
+    background-color: #F7F7F7;
+    width: 900px;
+    height: 415px;
+}
+
+.container {
+    display: grid;
+    gap: 20px 17px;
+    grid-template-columns: repeat(5, 160px);
+    grid-template-rows: repeat(4, 55px);
+    grid-template-areas:
+        "video-aberto video-aberto video-aberto propaganda propaganda";
+}
+
+.video-de-destaque {
+    grid-area: video-aberto;
+    grid-area: 1 / 1 / 4 / 4;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+.video-de-destaque
+.titulo-de-destaque {
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.video-de-destaque
+.descricao-do-video {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.propaganda {
+    grid-area: propaganda;
+    grid-column-end: 6;
+    transform: translateX(61px);
+    margin-top: 35px;
+}
+
+.titulo-video-sugerido,
+.informacoes {
+    padding-left: 105px;
+}
+
+.video-sugerido-1,
+.video-sugerido-2,
+.video-sugerido-3 {
+    white-space: nowrap;
+    margin-left: 60px;
+}
+
+.video-sugerido-1 {
+    display: grid;
+    gap: 5px;
+    margin-top: 35px;
+}
+
+.video-sugerido-1
+.titulo-video-sugerido {
+    transform: translateY(-76.5px);
+    font-weight: 700;
+    font-size: 14.4px;
+}
+
+.video-sugerido-1 
+.informacoes {
+    font-weight: 300;
+    font-size: 11px;
+    transform: translateY(-76px);
+}
+
+.video-sugerido-2 {
+    display: grid;
+    gap: 5px;
+    grid-area: 3 / 4 / 4 / 5;
+    margin-top: 50px;
+}
+
+.video-sugerido-2
+.titulo-video-sugerido {
+    transform: translateY(-77px);
+    font-weight: 700;
+    font-size: 14.4px;
+}
+
+.video-sugerido-2
+.informacoes {
+    transform: translateY(-75px);
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.video-sugerido-3 {
+    display: grid;
+    gap: 5px;
+    grid-area: 4 / 4 / 5 / 5;
+    margin-top: 65px;
+}
+
+.video-sugerido-3
+.titulo-video-sugerido {
+    transform: translateY(-77px);
+    font-weight: 700;
+    font-size: 14.4px;
+}
+
+.video-sugerido-3 
+.informacoes {
+    transform: translateY(-76px);
+    font-weight: 300;
+    font-size: 11px;
+}
